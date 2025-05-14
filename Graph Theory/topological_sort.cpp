@@ -75,8 +75,7 @@ vector<ll> v[1000];
 list<ll> li;
 void dfs(ll node){
     vis[node] = 1;
-    for(ll j=0; j<v[node].size(); j++){
-        int child = v[node][j];
+    for(auto child : v[node]) {
         if(vis[child]==0){
             dfs(child);
         }
