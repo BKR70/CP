@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 const int N = 105;
 int d[N], ans[N], a[N];
 
