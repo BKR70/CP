@@ -39,6 +39,7 @@ project.assets.json
 *.temp
 ~$*
 
+
 ## Other common ##
 TestResults/
 *.Publish.xml
