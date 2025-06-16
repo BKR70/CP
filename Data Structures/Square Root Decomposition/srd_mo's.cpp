@@ -13,6 +13,7 @@ bool comp(Q q1, Q q2) {
     }
     return q1.l/rootN < q2.l/rootN;
 }
+
 int32_t main() {
     int n; cin >> n;
     vector<int> ar(n);
