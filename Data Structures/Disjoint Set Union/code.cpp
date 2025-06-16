@@ -11,8 +11,7 @@ void init() {
 }
 bool ck = false;
 int Find(int n) {
-    if(ck)
-        cout << "Called with " << n << endl;
+    if(ck) cout << "Called with " << n << endl;
     if(n == par[n]) return n;
     return par[n] = Find(par[n]);
 }
