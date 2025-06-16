@@ -62,9 +62,7 @@ int32_t main() {
         }
         while(cur_r > r) {
             mp[ar[cur_r]]--;
-            if(mp[ar[cur_r]] == 0) {
-                ans--;
-            }
+            if(mp[ar[cur_r]] == 0) ans--;
             cur_r--;
         }
         vec[q[i].idx] = ans;
