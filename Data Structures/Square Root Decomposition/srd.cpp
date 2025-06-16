@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main() {
     int n; cin >> n;
     int len = sqrtl(n)+1;
@@ -10,6 +9,7 @@ int main() {
         sq[i/len] += v[i];
     }
     //cout << len << endl;
+    
     int q; cin >> q;
     while(q--) {
         int l,r; cin >> l >> r;
