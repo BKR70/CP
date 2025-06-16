@@ -2,9 +2,11 @@
 #define mx 100001
 using namespace std;
 int arr[mx];
+
 struct info {
     long long prop, sum;
 } tree[mx*4];
+
 void func(int node, int b, int e){
     if(b==e){
         tree[node].sum = arr[b];
@@ -45,8 +47,7 @@ void update_query(int node,int b,int e,int i,int j,int new_val){
     update_query(right,mid+1,e,i,j,new_val);
     tree[node].sum = tree[left].sum + tree[right].sum + tree[node].prop * (e-b+1);
 }
-int main()
-{
+int main() {
     int n;
     cin>>n;
     for(int i=1; i<=n; i++){
