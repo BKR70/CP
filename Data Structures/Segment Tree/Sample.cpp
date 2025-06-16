@@ -16,9 +16,7 @@ void func(int node, int b, int e){
     func(right,mid+1,e);
     tree[node] = tree[left]+tree[right];
 }
-
-int main()
-{
+int main() {
     int n;
     cin>>n;
     for(int i=1; i<=n; i++){
