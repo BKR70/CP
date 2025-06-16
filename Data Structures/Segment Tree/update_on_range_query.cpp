@@ -4,7 +4,7 @@ using namespace std;
 
 int arr[mx];
 int tree[mx*4];
-void func(int node, int b, int e){
+void func(int node, int b, int e) {
     if(b==e){
         tree[node] = arr[b];
         return;
@@ -16,7 +16,7 @@ void func(int node, int b, int e){
     func(right,mid+1,e);
     tree[node] = tree[left]+tree[right];
 }
-int range_sum(int node, int b, int e,int i,int j){
+int range_sum(int node, int b, int e,int i,int j) {
     if(b>j || e<i)
         return 0;
     if(b>=i && e<=j){
@@ -29,7 +29,7 @@ int range_sum(int node, int b, int e,int i,int j){
     int val2= range_sum(right,mid+1,e,i,j);
     return val1+val2;
 }
-void update_query(int node,int b,int e,int pos,int new_val){
+void update_query(int node,int b,int e,int pos,int new_val) {
     if(pos>e || pos<b)
         return;
     if(b==e){
@@ -43,8 +43,7 @@ void update_query(int node,int b,int e,int pos,int new_val){
     update_query(right,mid+1,e,pos,new_val);
     tree[node] = tree[left]+tree[right];
 }
-int main()
-{
+int main() {
     int n;
     cin>>n;
     for(int i=1; i<=n; i++){
