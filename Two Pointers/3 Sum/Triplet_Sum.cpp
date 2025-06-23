@@ -23,7 +23,7 @@ bool hasTripletSum(vector<int>& arr, int target) {
 int main() {
     vector<int> arr = { 1, 4, 45, 6, 10, 8 };
     int target = 16;
-    if(hasTripletSum(arr, target))
+    if(hasTripletSum(arr, target))      /// TC: O(n^2), SC: O(1)
         cout << "true";
     else
         cout << "false";
